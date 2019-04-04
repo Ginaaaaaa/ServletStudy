@@ -9,4 +9,15 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  
+  <!-- Context 초기화 파라미터 -->
+  <context-param>
+  	<param-name>dbuser</param-name>
+  	<param-value>vigteam</param-value>
+  </context-param>
+  <context-param>
+  	<param-name>dbpass</param-name>
+  	<param-value>vigteam</param-value>
+  </context-param>
+  
 </web-app>
