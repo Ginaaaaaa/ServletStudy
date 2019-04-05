@@ -23,14 +23,14 @@ public class LogDao extends BaseDao {
 		ResultSet rs = null;
 		
 		try {
-			conn = getConnection();
+			conn = getConnection(); /*부모 클래스가 갖고 있으니까*/
 			stmt = conn.createStatement();
 			String sql = "SELECT id, name, log FROM log";
 			rs = stmt.executeQuery(sql);
 			
 			// 	ResultSet  -> List
 			while (rs.next()) {
-				LogVo vo = new LogVo();
+				LogVo vo = new LogVo(); /*데이터를 적재할 vo 객체 생성*/
 				vo.setId(rs.getLong(1));
 				vo.setName(rs.getString(2));
 				vo.setLog(rs.getString(3));

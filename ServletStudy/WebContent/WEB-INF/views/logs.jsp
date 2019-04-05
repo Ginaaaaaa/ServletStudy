@@ -20,7 +20,7 @@ function checkForm(frm) {
 		frm.name.focus(); // 커서를 이름 쪽으로 옮겨줌
 	} else if (log.length == 0) {
 		alert('로그를 기록해 주세요');
-		frm.log.focuse();
+		frm.log.focus();
 		
 	} else {
 		frm.submit(); // 전송
