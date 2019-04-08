@@ -35,6 +35,7 @@ public class LogDao extends BaseDao {
 				vo.setName(rs.getString(2));
 				vo.setLog(rs.getString(3));
 				list.add(vo);
+				System.out.println(list);
 			}
 		} catch (Exception e) {
 			e.printStackTrace();

@@ -5,7 +5,7 @@ import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 
-public abstract class BaseServlet extends HttpServlet {
+public abstract class BaseServlet extends HttpServlet /*공통 서블릿*/{
 	protected String dbuser = null;
 	protected String dbpass = null;
 	
