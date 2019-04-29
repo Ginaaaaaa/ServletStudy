@@ -74,7 +74,7 @@ public class LogServlet extends BaseServlet {
 //			writer.close();
 			req.setAttribute("list", list);
 			RequestDispatcher rd = 
-					req.getRequestDispatcher("/WEB-INF/views/logs.jsp");
+					req.getRequestDispatcher("/WEB-INF/views/logs2.jsp");
 			rd.forward(req, resp);
 			
 		}
